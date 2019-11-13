@@ -13,6 +13,16 @@ body
 	justify:center;
 }
 
+iframe
+{
+	justify:center;
+}
+
+img
+{
+	justify:center;
+}
+
 h1
 {
 	font-size: 32px;
