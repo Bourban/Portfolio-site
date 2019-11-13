@@ -1,6 +1,6 @@
 main 
 {
-  max-width: 720px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 52px 26px;
 }
@@ -13,14 +13,27 @@ body
 	justify:center;
 }
 
+ul
+{
+	list-style-type: none;
+	padding: 10px;
+}
+
+ul li
+{
+	
+}
+
 iframe
 {
 	justify:center;
+	padding-bottom: 32px;
 }
 
 img
 {
 	justify:center;
+	padding-bottom: 32px;
 }
 
 h1
