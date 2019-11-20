@@ -22,9 +22,10 @@ main
 .rightText p
 {
 text-align: right;
-padding-right: 20%;
+padding-right: 10%;
 padding-left: 30%;
 padding-bottom: 20px;
+padding-top: 20px;
 }
 
 .leftText p
@@ -32,6 +33,7 @@ padding-bottom: 20px;
 padding-right: 30%;
 padding-left: 10%;
 padding-bottom: 20px;
+padding-top: 20px;
 }
 
 .nav li
@@ -69,9 +71,9 @@ ul
 	padding: 10px;
 }
 
-ul li
+p
 {
-	
+	text-align: justify;
 }
 
 iframe
@@ -97,7 +99,7 @@ h1
 
 li 
 {
-  padding-bottom: 13px;
+	text-align: justify;
 }
 
 a 
