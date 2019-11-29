@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="styles.css">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+ 
+ <div class="nav">
+  <ul>
+   <li><a href="index.html">Home</a></li>
+   <li><a href="projects.html">Projects</a></li>
+   <li><a href="bigup.html">The Big Up</a></li>
+  </ul>
+  </div>
+ 
+</head>
+
+<main>
+<body>
+
+<h1>Projects</h1>
+
+  <ul>
+	
+	<li><a href="bigup.html">The Big Up</a>, a 2D defense game created by a small group of postgrad students. As the only programmer I wrote the entire codebase. Also, due to the small size of the team I also contributed significantly to the game's design and created several of the player's animations.</li>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/EVCeayRCEho" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<li><strong>Untitled SFML Engine:</strong> My ongoing C++ SFML engine development, which can be found on my <a target="_blank" href="https://github.com/Bourban/">GitHub.</a> The latest implementation features jumping physics, collisions, fully animated characters and character swappping for the player. In particular I'd like to highlight the implementation of the <a target="_blank" href=" https://github.com/Bourban/SideScroller/blob/master/Commands.h">Command pattern</a>, which encapsulates user input and allows for easy character swapping.</li>
+	<img src="sfml-game.png" alt="SFML-Game" width="560" height="315">
+	
+	<li><a href="https://github.com/Bourban/Snek">Snek</a>, a console-based Snake remake in plain ol' C++ to practice some optimisation techniques with std::vectors, particularly pre-allocating the required memory for adding as many elements as necessary and using emplace_back() rather than push_back() to avoid having to construct a temporary object every time an element is added.</li>
+	<img src="snek.png" alt="Snek-Game" width="560" height="315">
+
+	<li>Some other assorted projects not mentioned here, including my <a href="https://screeps.com/">Screeps</a> AI and some (fairly old) Unity games, can be found on my <a target="_blank" href="https://github.com/Bourban/">GitHub</a> -- so feel free to have a peek.</li>
+  </ul>
+
+</body>
+</main>
+</html>

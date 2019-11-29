@@ -1,0 +1,121 @@
+main 
+{
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 52px 26px;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+	
+}
+
+.spacer p
+{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	
+}
+
+.rightText p
+{
+text-align: right;
+padding-right: 5%;
+padding-left: 15%;
+padding-bottom: 30px;
+
+}
+
+.leftText p
+{
+padding-right: 15%;
+padding-left: 5%;
+padding-bottom: 30px;
+
+}
+
+.nav li
+{
+  float: left;
+}
+
+.nav li a
+{
+  display: block;
+  color: #edf2f4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav li a:hover 
+{
+  background-color: #457b9d;
+}
+
+body
+{
+	padding-top:12px;
+	font-family: Consolas; 
+	font-size: 18px; 
+	background:#edf2f4;
+	justify:center;
+}
+
+ul
+{
+	list-style-type: none;
+	padding: 10px;
+}
+
+p
+{
+	text-align: justify;
+}
+
+iframe
+{
+	justify:center;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+img
+{
+	justify:center;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+h1
+{
+	font-size: 32px;
+	color:#457b9d;
+	letter-spacing: 1px;
+}
+
+li 
+{
+	text-align: justify;
+}
+
+a 
+{
+	text-decoration: none;	
+	color:#0090c1;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
