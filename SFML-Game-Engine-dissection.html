@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>Jordan Walsh - Bourban.co.uk</title>
+  
+  <div class="nav">
+  <ul>
+   <li><a href="index.html">Home</a></li>
+   <li><a href="projects.html">Projects</a></li>
+   <li><a href="bigup.html">The Big Up</a></li>
+   <li><a href="SFML-Game-Engine-dissection.html">Untitled SFML Games</a></li>
+   
+   
+  </ul>
+  </div>
+  
+</head>
+<body>
+<main>
+
+<h1>Untitled SFML Games</h1>
+
+<p>I've been working with SFML in my  spare time to practice my C++ and Object-Oriented programming skills, along with learning new concepts and patterns. They aren't much to look at because I had few art assets to work with, though the source code for all is viewable <a href="https://github.com/Bourban/Yet-Another-SFML-Game">here.</a></p>
+
+<p>The first game, made in my spare time during my second year of university, was a top down ship combat game which featured momentum-based movement and axis-aligned bounding boxes for collisions.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JwzZQlYoOJc" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+<p>The next SFML game I produced, this time during my final year of undergrad was a 2D Side scroller game featuring multiple player characters the player can swap between, jumping physics, collisions, objects the player can interact with and a screen system for changing scenes.</p>
+
+<p>I mainly created this so I could have attempt to implement the command pattern into a game, and decided that a good way to show off its use would be to have multiple characters to swap between.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IVdToiKzaMI" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>After I graduated I was going to continue working on my side Scroller game but looking through my repository I decided I could just do better. So I started again from scratch, this time focussing on perfecting the movement system and adding animations. This iteration has less features than the previous one but is far better written (see below for code dissections). </p>
+
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/ktxGV6dsZfc" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+ <p>I decided to make the player class inherit from sf::Sprite (which in turn inherits from sf::Drawable and sf::Transformable) allowing me to draw any player objects without the need for a sf::Sprite class member, this also inherently gives the player a transform and uitilities to manipulate the transform (e.g. player.move()). I also created a state enum which determies which animation should be playing as well as restricting certain actions while in certain states:  </p>
+
+<script src="http://gist-it.appspot.com/https://github.com/Bourban/Yet-Another-SFML-Game/blob/master/Player.h"></script>
+<script src="http://gist-it.appspot.com/https://github.com/Bourban/Yet-Another-SFML-Game/blob/master/Player.cpp"></script>
+
+<p> I also experimented with a utility namespace named 'helpers' which contained static methods and variables which would need to be accessible from various classes such as the update rate and minimum ground height along with functions to determine whether any input was being detected from any key relevant to the game (as opposed to checking every possible input source for input):
+</p>
+ 
+ <script src="http://gist-it.appspot.com/https://github.com/Bourban/Yet-Another-SFML-Game/blob/master/Helpers.h"></script>
+ 
+</main>`
+</body>
+</html>
